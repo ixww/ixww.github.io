@@ -1,0 +1,38 @@
+---
+layout:     post
+title:      "fork一个博客"
+subtitle:   "jekyll, github pages, git"
+date:       2018-01-20
+author:     "iXww"
+tags:
+    - 博客
+---
+
+之前不知道为什么，把半年没上的github给删了。现在想看之前写的日志，也都没了。（想不通自己脑子抽什么）只好用jekyll再撸一个，顺道换换别人不错的模板。开撸：
+
+1.找到不错的模板 clone
+```
+git clone git@github.com:someuser/sometemp.git USERNAME.github.io
+```
+git clone 里第二个参数是克隆的文件夹名称 不填的话 是默认项目名。（我居然一直都不知道，好low)
+
+2.clone完成后，修改源
+```
+git remote set-url origin git@github.com:USERNAME/USERNAME.github.io.git
+```
+
+3.修改配置文件，执行jekyll server 查看自己的模板
+
+4.设置CNAME，将自己的域名写入CNAME文件，同时域名解析到github：（下表为阿里域名解析导出）
+
+|记录类型    |主机记录    |解析线路    |记录值              |MX优先级   |TTL值|
+|-----------|-----------|-----------|------------------|----------|     |
+|CNAME      |*          |默认       |USERNAME.github.io |          |600  |
+|A          |@          |默认       |192.30.252.153     |          |600  |
+|A          |@          |默认       |192.30.252.154     |          |600  |
+
+5.push 收工。
+
+总体来说，还是蛮简单的。最终改完后，把作者的github留页面最下了，可以去fork看看。README里有个中文翻译的链接，里边有纯净版的demo，可以直接fork纯净版的。
+
+

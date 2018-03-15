@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>iXww</title>
+    <description></description>
+    <link>http://ixww.cc/</link>
+    <atom:link href="http://ixww.cc/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 30 Jan 2018 00:49:27 +0800</pubDate>
+    <lastBuildDate>Tue, 30 Jan 2018 00:49:27 +0800</lastBuildDate>
+    <generator>Jekyll v3.1.3</generator>
+    
+      <item>
+        <title>php小白学习记（一）</title>
+        <description>&lt;h1 id=&quot;1-in_array方法&quot;&gt;1. in_array方法&lt;/h1&gt;
+&lt;p&gt;###定义和用法&lt;br /&gt;
+in_array() 函数搜索数组中是否存在指定的值。&lt;br /&gt;
+注释：如果 search 参数是字符串且 type 参数被设置为 TRUE，则搜索区分大小写。&lt;br /&gt;
+###说明&lt;br /&gt;
+如果给定的值 search 存在于数组 array 中则返回 true。如果第三个参数设置为 true，函数只有在元素存在于数组中且数据类型与给定值相同时才返回 true。&lt;br /&gt;
+如果没有在数组中找到参数，函数返回 false。&lt;br /&gt;
+注释：如果 search 参数是字符串，且 type 参数设置为 true，则搜索区分大小写。&lt;br /&gt;
+也就是说，不需要像ES5一样还得遍历对比了，当然ES6加入了find和findIndex方法，也是大大方便了很多。&lt;/p&gt;
+
+&lt;h1 id=&quot;2-explode方法&quot;&gt;2. explode方法&lt;/h1&gt;
+&lt;p&gt;###定义和用法&lt;br /&gt;
+explode() 函数把字符串打散为数组。&lt;br /&gt;
+注释：”separator” 参数不能是空字符串。&lt;br /&gt;
+注释：该函数是二进制安全的。&lt;br /&gt;
+感觉类似js中的split方法，就是将字符串以一定的规则截取。&lt;br /&gt;
+比如现在有 “1,2,3” 这个字符串 也就是 explode(“,”,”1,2,3”);就会转化为一个Array对象了。&lt;/p&gt;
+
+&lt;p&gt;两个方法结合用，就可以判断某个id是否存在于一个id集合中。&lt;/p&gt;
+
+&lt;p&gt;吐槽下：php里属性的读取，应该不能用”.”操作符吧，晚上找了个问题，找了半天，愣是不知道为毛不出来，后来换成[]属性读取，就好了。明天研究下PHP的 “.”运算符和”[]”取值，看有什么不同。&lt;/p&gt;
+
+&lt;p&gt;连续一周都是1点半以后睡觉了，第二天还7点起，溜了溜了。&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 30 Jan 2018 00:00:00 +0800</pubDate>
+        <link>http://ixww.cc/2018/01/30/learn-php-1/</link>
+        <guid isPermaLink="true">http://ixww.cc/2018/01/30/learn-php-1/</guid>
+        
+        <category>PHP</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>readily.cc</title>
+        <description>&lt;p&gt;其实今年有几个想要自己做的项目。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;readily.cc ，一个在线做海报的项目，用vue + element-ui + canvas 在线生成的一个海报制作工具。海报的话，还是走公司的模板，到时候做一些自定义的接口来实现，先跑跑看，顺带把界面给优化了，element-ui我想应该能够胜任这玩意。&lt;/li&gt;
+  &lt;li&gt;个人日记的小程序。先做成本地版本的，这个项目会完全公开化，代码直接扔github上。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;海报那个小玩意，其实还是想走互联网模式，工具免费用，收费点在海报和广告上，这样其实也能带来一些自然流量，代码纯粹用vue来实现，最起码不会一眼看穿代码的整体结构吧。前期还是先扔github，后期看情况得做成个私人项目，不然攀攀肯定找我事了，相当于公司产品没的卖了。至于日记那个小程序，自己也是做了一部分，但是没弄完，3块钱买了俩月腾讯云试用，到月底就过期了，我这还没开始捣鼓。哎，完全给浪费了。也只能先做个本地版的，就参照吾记吧。毕竟我现在正用着这个。（没产品经理也真让人头大。&lt;/p&gt;
+
+&lt;p&gt;另：今天发了工资，最起码每个人都见着钱了，也证明我们的东西，也在一天天变好吧。&lt;/p&gt;
+
+&lt;p&gt;加油！&lt;/p&gt;
+</description>
+        <pubDate>Tue, 23 Jan 2018 00:00:00 +0800</pubDate>
+        <link>http://ixww.cc/2018/01/23/readily.cc/</link>
+        <guid isPermaLink="true">http://ixww.cc/2018/01/23/readily.cc/</guid>
+        
+        <category>博客</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>fork一个博客</title>
+        <description>&lt;p&gt;之前不知道为什么，把半年没上的github给删了。现在想看之前写的日志，也都没了。（想不通自己脑子抽什么）只好用jekyll再撸一个，顺道换换别人不错的模板。开撸：&lt;/p&gt;
+
+&lt;p&gt;1.找到不错的模板 clone&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone git@github.com:someuser/sometemp.git USERNAME.github.io
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;git clone 里第二个参数是克隆的文件夹名称 不填的话 是默认项目名。（我居然一直都不知道，好low)&lt;/p&gt;
+
+&lt;p&gt;2.clone完成后，修改源&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git remote set-url origin git@github.com:USERNAME/USERNAME.github.io.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;3.修改配置文件，执行jekyll server 查看自己的模板&lt;/p&gt;
+
+&lt;p&gt;4.设置CNAME，将自己的域名写入CNAME文件，同时域名解析到github：（下表为阿里域名解析导出）&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;记录类型&lt;/th&gt;
+      &lt;th&gt;主机记录&lt;/th&gt;
+      &lt;th&gt;解析线路&lt;/th&gt;
+      &lt;th&gt;记录值&lt;/th&gt;
+      &lt;th&gt;MX优先级&lt;/th&gt;
+      &lt;th&gt;TTL值&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;CNAME&lt;/td&gt;
+      &lt;td&gt;*&lt;/td&gt;
+      &lt;td&gt;默认&lt;/td&gt;
+      &lt;td&gt;USERNAME.github.io&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;600&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;A&lt;/td&gt;
+      &lt;td&gt;@&lt;/td&gt;
+      &lt;td&gt;默认&lt;/td&gt;
+      &lt;td&gt;192.30.252.153&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;600&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;A&lt;/td&gt;
+      &lt;td&gt;@&lt;/td&gt;
+      &lt;td&gt;默认&lt;/td&gt;
+      &lt;td&gt;192.30.252.154&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;600&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;5.push 收工。&lt;/p&gt;
+
+&lt;p&gt;总体来说，还是蛮简单的。最终改完后，把作者的github留页面最下了，可以去fork看看。README里有个中文翻译的链接，里边有纯净版的demo，可以直接fork纯净版的。&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 20 Jan 2018 00:00:00 +0800</pubDate>
+        <link>http://ixww.cc/2018/01/20/Hello/</link>
+        <guid isPermaLink="true">http://ixww.cc/2018/01/20/Hello/</guid>
+        
+        <category>博客</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
