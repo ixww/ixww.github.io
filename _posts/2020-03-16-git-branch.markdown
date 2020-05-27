@@ -2,7 +2,7 @@
 layout:     post
 title:      "mac终端显示git分支"
 subtitle:   "mac终端显示git分支"
-date:       2018-03-16
+date:       2020-03-16
 author:     "iXww"
 tags:
     - git

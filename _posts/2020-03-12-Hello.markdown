@@ -2,7 +2,7 @@
 layout:     post
 title:      "fork一个博客"
 subtitle:   "jekyll, github pages, git"
-date:       2018-01-20
+date:       2020-03-12
 author:     "iXww"
 tags:
     - 博客
